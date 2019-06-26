@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function f1(event){
+				var a=10;
+				console.log(event.keyCode+"from keypress");
+		}
+		function f2(event){
+			let b=10;
+				console.log(event.keyCode+"from keydown");
+		}
+		function f3(event){
+			console.log(event.keyCode+"from keyup");
+		}
+		console.log(a);
+		console.log(b);
+	</script>
+</head>
+<body>
+	<input type="text" onkeypress="f1(event)" onkeydown="f2(event)" onkeyup="f3(event)"> 
+</body>
+</html>

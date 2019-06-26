@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<form method="post" action="tryjson.html">
+		userid <input type="text" id="userid"><br>
+		Password<input type="Password" id="pass"><br>
+		<button onclick=" return check()">submit</button>
+	</form>
+	<script type="text/javascript">
+		function check() {
+			var user = document.getElementById('userid').value;
+			var pass = document.getElementById('pass');
+			if(user === 'jeeva')
+				return false ;
+			
+		}
+	</script>
+</body>
+</html>

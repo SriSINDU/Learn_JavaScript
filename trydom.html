@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <style> 
+            h1 { 
+                color:yellow; 
+            } 
+            body { 
+                text-align:center; 
+            } 
+        </style> 
+        <script> 
+            function GFG() { 
+  
+                // Get Active Element using activeElement property and assign it value equal  to its tag 
+                var x = document.activeElement.tagName; 
+                document.getElementById("geeks").innerHTML = x; 
+            } 
+        </script> 
+    </head> 
+    <body onclick="GFG()"> 
+        <h1>DOM activeElement property</h1> 
+        <input type="text" placeholder="Enter some text"> 
+        <button>Submit</button> 
+        <p id="geeks"></p> 
+    </body> 
+</html>                        

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<h2>Store and retrieve JSON data from local storage.</h2>
+	</head>
+<body>
+	<p id="demo"></p>
+	<div id="id1">hi sindhu</div>
+	<button type="button" onclick="document.getElementById('id1').style.color = 'green'">
+Click Me!</button>
+	<script>
+		var myObj, myJSON, text, obj;
+
+		
+		myObj = { namee: "Sindhu", emaill: "srisindu.3@gmail.com",phonee:9491014271, cityy: "Visakhapatnam" };
+		myJSON = JSON.stringify(myObj);
+		localStorage.setItem("testJSON", myJSON);
+
+
+		text = localStorage.getItem("testJSON");
+		obj = JSON.parse(text);
+		document.getElementById("demo").innerHTML = obj.cityy;
+		document.getElementById("demo").style.color="red";
+		document.getElementById("demo").addEventListener("click", changeColor);
+		function changeColor(){
+			document.getElementById("demo").style.color="blue";	
+		}
+
+		//document.getElementsByTagName("div").innerHTML = obj.age;
+
+	</script>
+</body>
+</html>

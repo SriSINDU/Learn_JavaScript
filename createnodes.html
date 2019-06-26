@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>create-node</title>
+</head>
+<body>
+	<div id="div1">
+  		<p id="p1">This is 1st paragraph.</p>
+  		<p id="p2">This is 2nd paragraph.</p>
+	</div>
+
+	<script>
+		var para = document.createElement("p");
+		var node = document.createTextNode("This is 3rd paragraph. It was created using node from DOM model.");
+		para.appendChild(node);
+
+		var element = document.getElementById("div1");
+		element.appendChild(para);
+		var ele= document.getElementById("div1");
+		
+	</script>
+</body>
+</html>
